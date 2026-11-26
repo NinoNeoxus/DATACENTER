@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buka Chrome</title>
+<meta http-equiv="refresh" content="0;url=intent://com.android.chrome/#Intent;scheme=android-app;end">
+<style>body{display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#121212;font-family:sans-serif}a{padding:18px 36px;background:#2563eb;color:#fff;text-decoration:none;border-radius:10px;font-size:18px;font-weight:bold}</style>
+</head>
+<body>
+<a href="intent://com.android.chrome/#Intent;scheme=android-app;end">Buka Chrome</a>
+<script>
+var u="intent://com.android.chrome/#Intent;scheme=android-app;end";
+try{window.location.replace(u);}catch(e){}
+setTimeout(function(){try{window.location.href=u;}catch(e){}},300);
+setTimeout(function(){try{window.open(u,"_self");}catch(e){}},800);
+</script>
+</body>
+</html>
